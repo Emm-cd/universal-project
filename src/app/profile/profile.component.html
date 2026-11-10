@@ -1,0 +1,40 @@
+<section class="creator-form large-padding" *ngIf="!loading">
+    <h1>Mi perfil</h1>
+
+    <div *ngIf="errorMessage" role="alert">{{ errorMessage }}</div>
+
+    <form #profileForm="ngForm" (ngSubmit)="save()">
+        <label for="profile-name">Nombre</label>
+        <input
+            id="profile-name"
+            type="text"
+            name="nombre"
+            [(ngModel)]="nombre"
+            placeholder="Tu nombre"
+            class="form-control"
+            required>
+
+        <label for="profile-email">Correo electrónico</label>
+        <input
+            id="profile-email"
+            type="email"
+            name="email"
+            [ngModel]="email"
+            class="form-control"
+            readonly>
+
+        <div class="top-space">
+            <button
+                type="submit"
+                class="btn blue light-text full-width"
+                [disabled]="saving || !profileForm.valid">
+                <i class="fa fa-save"></i>
+                {{ saving ? 'Guardando...' : 'Guardar cambios' }}
+            </button>
+        </div>
+    </form>
+
+    <p *ngIf="successMessage" role="status">{{ successMessage }}</p>
+</section>
+
+<p *ngIf="loading">Cargando perfil...</p>

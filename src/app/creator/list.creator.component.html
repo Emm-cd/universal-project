@@ -1,0 +1,9 @@
+<div class="large-pading">
+    <input type="text" [(ngModel)]="list.title" placeholder="Nombre de la lista" class="form-control" >
+    <p *ngIf="errorMessage" class="red-text">{{ errorMessage }}</p>
+    <div class="top-space">
+        <button type="button" class="btn blue light-text full-width" (click)="save()">
+            <i class="fa fa-save">Guardar</i>
+        </button>
+    </div>
+</div>

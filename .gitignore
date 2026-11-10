@@ -1,0 +1,46 @@
+# === Secretos y Entorno ===
+.env
+.env.*
+!.env.example
+
+# === Archivos del Sistema y Editores ===
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# === Dependencias ===
+/node_modules/
+/typings/
+/tsd_typings/
+
+# === Archivos Compilados / Builds (Angular Universal & SSR) ===
+/__build__/
+/__server_build__/
+/dist/
+/dist-server/
+/compiled/
+/out-tsc/
+/.angular/
+
+# === Angular & Webpack ===
+*.ngfactory.ts
+*.css.shim.ts
+*.ngsummary.json
+*.metadata.json
+*.shim.ngstyle.ts
+webpack.records.json
+
+# === Logs & Cobertura de Pruebas ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/coverage/
+
+# === Cache & Archivos Temporales ===
+/.sass-cache/
+/.tmp/

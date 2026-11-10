@@ -1,0 +1,18 @@
+.blue{
+    background-color: #75c1ff;
+}
+.light-text{
+    color: #005eff;
+}
+body{
+    background-color: #292c44;
+    color: #F0F0F1;
+}
+.card{
+    background-color: #f3f4f8;
+    color: #171718;
+}
+.card.with-badge .badge span{
+    background-color: #e50909;
+    color: #f8f8f9;
+}
